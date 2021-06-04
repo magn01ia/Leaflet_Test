@@ -71,28 +71,15 @@ L.control.opacity(
 ).addTo(map);
 
 
-$.getJSON("data/test.geojson", function(data) {
+$.getJSON("data/hinansisetu.geojson", function(data) {
     var point = L.geoJson(data, {
         ///pointToLayer: function (feature, latlng) {
         ///return L.circle(latlng,5, {
         ///color: 'yellow'
         ///})},
         onEachFeature: function (feature, layer) {
-        layer.bindPopup(feature.properties.管理番号);
+        layer.bindPopup(feature.properties.P20_002);
         }
     });
     point.addTo(map)
     });
-
-    $.getJSON("data/test.geojson", function(data) {
-        var point = L.geoJson(data, {
-            ///pointToLayer: function (feature, latlng) {
-            ///return L.circle(latlng,5, {
-            ///color: 'yellow'
-            ///})},
-            onEachFeature: function (feature, layer) {
-            layer.bindPopup(feature.properties.管理番号);
-            }
-        });
-        point.addTo(map)
-        });
