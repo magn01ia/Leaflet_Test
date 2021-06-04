@@ -74,7 +74,7 @@ L.control.opacity(
 $.getJSON("data/hinansisetu.geojson", function(data) {
     var point = L.geoJson(data, {
         pointToLayer: function (feature, latlng) {
-        return L.circle(latlng,5, {
+        return L.circle(latlng,10, {
         color: 'Red'
         })},
         onEachFeature: function (feature, layer) {
