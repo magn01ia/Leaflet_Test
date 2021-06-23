@@ -38,7 +38,8 @@ var map = L.map('map', {
     center: [36.38254, 139.734104],
     zoom: 13,
     zoomControl: true,
-    layers: [t_A]
+    layers: [t_A],
+    maxZoom:16,
 });
 
 //BaseLayer
