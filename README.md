@@ -20,7 +20,6 @@ https://disaportal.gsi.go.jp/hazardmap/copyright/opendata.html
 タイルレイヤーの透過機能はLeaflet.Control.Opacityプラグインを使用しています。  
 **Leaflet.Control.Opacity**  
 https://github.com/dayjournal/Leaflet.Control.Opacity  
-MIT Copyright (c) 2018-2021 Yasunori Kirimoto
 
 ## 参考文献・出典  
 Leaflet  
