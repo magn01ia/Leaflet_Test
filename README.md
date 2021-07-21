@@ -17,6 +17,11 @@ https://nlftp.mlit.go.jp/ksj/other/agreement.html
 **ハザードマップポータルサイト**  
 https://disaportal.gsi.go.jp/hazardmap/copyright/opendata.html
 
+タイルレイヤーの透過機能はLeaflet.Control.Opacityプラグインを使用しています。  
+**Leaflet.Control.Opacity**  
+https://github.com/dayjournal/Leaflet.Control.Opacity  
+MIT Copyright (c) 2018-2021 Yasunori Kirimoto
+
 ## 参考文献・出典  
 Leaflet  
 https://leafletjs.com  
@@ -25,4 +30,6 @@ https://maps.gsi.go.jp/development/ichiran.html
 国土数値情報ダウンロードサービス・避難施設(国土交通省)    
 https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-v3_0.html  
 ハザードマップポータルサイト  
-https://disaportal.gsi.go.jp/index.html
+https://disaportal.gsi.go.jp/index.html  
+Leaflet.Control.Opacity  
+https://github.com/dayjournal/Leaflet.Control.Opacity
