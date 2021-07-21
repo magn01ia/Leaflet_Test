@@ -72,15 +72,18 @@ L.control.opacity(
 ).addTo(map);
 
 
+//避難施設ポイント・アイコン定義
 $.getJSON("data/hinansisetu.geojson", function(data) {
-    var point = L.geoJson(data, {
-        pointToLayer: function (feature, latlng) {
-        return L.circle(latlng,10, {
-        color: 'Red'
-        })},
-        onEachFeature: function (feature, layer) {
-        layer.bindPopup(feature.properties.P20_002);
-        }
+    var hinannsisetu = L.geoJson(data, {
+        onEachFeature: function (feature, layer) 
+        {layer.bindTooltip(feature.properties.P20_002,{sticky:true});},
+        pointToLayer: function (_feature, latlng) 
+        {return L.marker(latlng, {icon: icon_hinannsisetu});},
+    });    
+    hinannsisetu.addTo(map)
     });
-    point.addTo(map)
-    });
+
+var icon_hinannsisetu = L.icon({
+    iconUrl: 'icon/hinannsisetu.png',
+    iconSize: [20,20]
+});
