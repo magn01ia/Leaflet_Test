@@ -32,4 +32,10 @@ https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-v3_0.html
 ハザードマップポータルサイト  
 https://disaportal.gsi.go.jp/index.html  
 Leaflet.Control.Opacity  
-https://github.com/dayjournal/Leaflet.Control.Opacity
+https://github.com/dayjournal/Leaflet.Control.Opacity  
+
+## ライセンス  
+MIT
+Copyright (c) 2021 Magn01ia
+
+
