@@ -70,3 +70,13 @@ L.control.layers(
 L.control.opacity(
     Map_AddLayer
 ).addTo(map);
+
+
+//leaflet-control-window
+var options = {
+  title:'タイトル（<a href="#">リンク</a>）',
+  content:'<p>control window content.</p><p><a href="https://github.com/mapshakers/leaflet-control-window" target="_blank">GitHub</a></p>',
+  modal: false,
+  position:'center' // 'center', 'top', 'topRight', 'right', 'bottomRight', 'bottom', 'bottomLeft', 'left', 'topLeft'
+};
+var win =  L.control.window(map, options).show();
