@@ -36,7 +36,7 @@ var t_G = new L.tileLayer('https://disaportaldata.gsi.go.jp/raster/01_flood_l2_s
 //MAP
 var map = L.map('map', {
     center: [36.38254, 139.734104],
-    zoom: 13,
+    zoom: 10,
     zoomControl: true,
     layers: [t_A],
     maxZoom:16,
@@ -70,20 +70,3 @@ L.control.layers(
 L.control.opacity(
     Map_AddLayer
 ).addTo(map);
-
-
-//避難施設ポイント・アイコン定義
-$.getJSON("data/hinansisetu.geojson", function(data) {
-    var hinannsisetu = L.geoJson(data, {
-        onEachFeature: function (feature, layer) 
-        {layer.bindTooltip(feature.properties.P20_002,{sticky:true});},
-        pointToLayer: function (_feature, latlng) 
-        {return L.marker(latlng, {icon: icon_hinannsisetu});},
-    });    
-    hinannsisetu.addTo(map)
-    });
-
-var icon_hinannsisetu = L.icon({
-    iconUrl: 'icon/hinannsisetu.png',
-    iconSize: [20,20]
-});
